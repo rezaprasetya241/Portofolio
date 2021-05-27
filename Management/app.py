@@ -3,14 +3,12 @@ import time
 import sqlite3
 from datetime import datetime
 
-current_balance = 1000
 
 class SampleApp(tk.Tk):
 
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
 
-        self.shared_data = {'Balance':tk.IntVar()}
 
         container = tk.Frame(self)
         container.pack(side="top", fill="both", expand=True)
